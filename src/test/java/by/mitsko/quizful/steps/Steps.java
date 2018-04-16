@@ -75,6 +75,7 @@ public class Steps {
 		
 		WebElement save = driver.findElement(By.name("personalForm.save"));
 		save.click();
+		logger.info("Information was edited")
 	}
 	
 	public void notice () throws InterruptedException{
@@ -100,13 +101,15 @@ public class Steps {
 		WebElement save = driver.findElement(By.name("notificationsForm.save"));
 		save.click();
 		
+		logger.info("Notifications was edited")
+		
 	}
 	
 	public void privacy () throws InterruptedException{
 		WebElement profile = driver.findElement(By.xpath("//*[@id='navigation']/li[7]/a"));
 		profile.click();
 		
-        Thread.sleep(5000);
+                Thread.sleep(5000);
 		
 		WebElement editing = driver.findElement(By.xpath("//*[@id='middle']/div[2]/div[1]/div[2]/div/a"));
 		editing.click();
@@ -121,6 +124,8 @@ public class Steps {
 		
 		WebElement save = driver.findElement(By.name("privacyForm.save"));
 		save.click();
+		
+		logger.info("Privasy was edited")
 		
 	}
 	

@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class MainPage extends AbstractPage {
+	private final String BASE_URL = "http://www.quizful.net/test";
 	
 	public MainPage(WebDriver driver)
 	{
@@ -14,8 +15,8 @@ public class MainPage extends AbstractPage {
 
 	@Override
 	public void openPage() {
-		// TODO Auto-generated method stub
 		
+		driver.navigate().to(BASE_URL);
 	}
 
 }
